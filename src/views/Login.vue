@@ -136,6 +136,7 @@ const handleLogin = async () => {
   }
 
   localStorage.setItem('campus_food_user', JSON.stringify(userInfo))
+  window.dispatchEvent(new Event('campus-user-updated'))
   ElMessage.success('登录成功')
   await router.replace(route.query.redirect || '/')
 }

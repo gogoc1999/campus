@@ -45,6 +45,7 @@ a {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 20px;
   color: #4b5563;
 }
@@ -52,6 +53,15 @@ a {
 .nav-links .router-link-active {
   color: #16a34a;
   font-weight: 600;
+}
+
+.user-name {
+  max-width: 140px;
+  overflow: hidden;
+  color: #14532d;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .app-main {
@@ -563,6 +573,11 @@ a {
     flex-direction: column;
     gap: 12px;
     padding: 16px 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    row-gap: 10px;
   }
 
   .app-main,
